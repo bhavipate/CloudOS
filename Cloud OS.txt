@@ -1,0 +1,382 @@
+Cloud OS 
+
+(Flexibility -> Resource Management)
+	|
+	 - Compute
+	 - Storage
+	 - Networking
+
+
+
+Why Cloud OS?
+	1. Scalability
+	2. Efficiency
+	3. Cost-Effectiveness
+	4. Distributed System
+	5. Security
+	6. High Availability
+	7. Automation and Orchestration
+
+Proprietary Cloud OS
+	1. VMware vSphere
+	2. Azure
+	3. Anthos
+	4. AWS
+
+
+
+___________________________________
+
+Traditional vs Cloud OS
+
+
+___________________________________
+
+Storage Types
+
+	1. S3 -> Flat Object Storage (Not maintain dir structure)
+	2. EFS -> File structure -> Access Multiple Locations (Distributed Systems)
+	3. EBS -> Hard Disk
+
+
+
+____________________________________
+
+Networking and Security
+
+	1. VPC -> CIDR -> 10.0.0.0/16
+
+IGW -> All traffic to public should go via this subnet
+
+
+
+_____________________________________
+
+	EC2 vs Fargate
+
+_____________________________________
+
+
+
+Stateful
+
+Inbound Rule -> Automatically allows outbound traffic
+
+Stateless
+
+Manually Set Inbound + Outbound both incoming/outgoing traffic
+
+
+_____________________________________
+
+
+**VPC are regional service**
+
+_____________________________________
+
+
+
+Delivering a session on Cloud Operating Systems (Cloud OS) can be an impactful topic, showcasing how operating systems are evolving to meet the demands of modern cloud computing. Here’s how you can structure your session:
+
+Introduction to Cloud OS 
+•	Definition:
+o	A Cloud Operating System is a platform designed to manage virtualized resources (compute, storage, and networking) in a cloud environment.
+o	It acts as an intermediary between the physical hardware and the applications running in the cloud.
+•	Why Cloud OS?
+o	Scalability: Dynamically adjusts resources based on demand.
+o	Efficiency: Optimizes the utilization of hardware.
+o	Cost-Effectiveness: Pay-as-you-use models.
+o	Automation: Simplifies deployment and management.
+
+Core Features of Cloud OS 
+1.	Virtualization:
+a.	Supports running multiple virtual machines on a single physical server.
+b.	Examples: VirtualBox, VMware, KVM.
+2.	Resource Management:
+a.	Dynamically allocates CPU, memory, storage, and network resources.
+3.	Distributed Systems:
+a.	Manages resources across multiple physical and virtual machines.
+4.	Security:
+a.	Provides user authentication, data encryption, and access control.
+5.	High Availability (HA):
+a.	Ensures minimal downtime by redistributing workloads during failures.
+6.	Automation & Orchestration:
+a.	Deploys applications, manages scaling, and automates repetitive tasks.
+
+Examples of Popular Cloud OS Platforms 
+Open Source Cloud OS
+1.	OpenStack:
+a.	Modular platform for building private and public clouds.
+b.	Components: Nova (compute), Swift (storage), Neutron (networking).
+c.	Use Case: Companies like CERN and Walmart use OpenStack.
+2.	Cloud Foundry:
+a.	Platform-as-a-Service (PaaS) enabling developers to build and deploy applications.
+b.	Focuses on microservices and container-based apps.
+3.	Proxmox VE:
+a.	Combines KVM (virtualization) with LXC (containerization).
+b.	Ideal for private clouds.
+Proprietary Cloud OS
+1.	VMware vSphere:
+a.	Enterprise-grade virtualization platform for hybrid and private clouds.
+b.	Features: vMotion, vCenter.
+2.	Microsoft Azure:
+a.	Integrated with Windows and Linux environments.
+b.	Services: Virtual Machines, Azure Kubernetes Service.
+3.	Google Anthos:
+a.	Hybrid cloud platform that integrates with Kubernetes.
+b.	Focuses on multi-cloud deployments.
+4.	Amazon Web Services (AWS):
+a.	Provides a virtual OS-like environment for deploying applications.
+b.	Services: EC2, S3, Lambda.
+
+Hands-On Demonstration 
+Activity 1: Virtual Machine in the Cloud
+1.	Objective: Deploy a virtual machine using AWS EC2.
+2.	Steps:
+a.	Log in to the AWS Management Console.
+b.	Launch an EC2 instance:
+i.	Choose an OS (Ubuntu or Windows Server).
+ii.	Configure instance type (t2.micro for free tier).
+iii.	Add storage and review settings.
+c.	Access the instance using SSH or RDP.
+d.	Run basic commands to explore the environment.
+3.	Outcome: Understand cloud resource provisioning and access.
+4.	Run basic Linux commands 
+
+Activity 2: Container Orchestration with Docker/ Kubernetes
+1.	Objective: Deploy and manage containers.
+2.	Steps:
+a.	Install Docker on your cloud-based VM.
+b.	Pull and run a container (nginx, redis, etc.).
+c.	Demonstrate scaling and stopping containers.
+d.	(Optional) Use Kubernetes (Minikube) to create a cluster.
+3.	Outcome: Learn about container-based deployment.
+Activity 3: File Storage in the Cloud
+1.	Objective: Use Amazon S3 for storage.
+2.	Steps:
+a.	Create an S3 bucket.
+b.	Upload a file and set permissions.
+c.	Retrieve the file using the AWS CLI.
+3.	Outcome: Understand cloud-based storage management.
+
+Future Trends in Cloud OS 
+1.	Edge Computing Integration:
+a.	Lightweight OS for edge devices (e.g., AWS IoT Greengrass).
+2.	AI-Driven Cloud OS:
+a.	Predictive resource allocation and scaling.
+3.	Serverless Architectures:
+a.	Move towards fully managed services (e.g., AWS Lambda).
+4.	Cross-Cloud Compatibility:
+a.	Platforms like Anthos for unified multi-cloud management.
+
+Conclusion and Q&A 
+•	Summarize key points:
+o	Definition, core features, examples of Cloud OS.
+o	Practical use cases and hands-on exercises.
+•	Open the floor for questions and feedback.
+
+3. Tools and Resources
+Tools for Demonstration:
+•	AWS Free Tier: For EC2, S3, and more.
+•	Google Cloud Free Tier: Alternative for VM and Kubernetes.
+•	VirtualBox: Local practice with virtualization.
+•	Docker: Basic containerization.
+•	Minikube: Kubernetes on local machines.
+Learning Resources:
+•	Books:
+o	Cloud Computing Concepts, Technology & Architecture by Thomas Erl.
+o	Mastering OpenStack by Omar Khedher.
+•	Online Courses:
+o	AWS: AWS Cloud Practitioner Essentials.
+o	Kubernetes: Kubernetes Academy.
+
+4. Presentation Tips
+•	Simplify: Use diagrams to explain cloud architecture.
+•	Relatable Examples: Connect Cloud OS concepts to daily-used cloud services (e.g., Google Drive, Netflix).
+•	Interactive: Involve students in the hands-on tasks.
+•	Visual Aids: Use videos, screenshots, and live demos for clarity.
+
+•	Title: Activity 1: Launching a Virtual Machine
+•	Steps:
+o	Log in to AWS.
+o	Launch an EC2 instance.
+o	Connect via SSH.
+o	Run basic Linux commands.
+•	Visual: Screenshot of AWS EC2 setup page.
+
+Slide 11: Hands-On: Docker Containers
+•	Title: Activity 2: Running Docker Containers
+•	Steps:
+o	Install Docker.
+o	Pull an image (nginx).
+o	Start a container.
+o	Scale up/down.
+•	Visual: Docker CLI commands with output screenshot.
+
+Slide 12: Hands-On: Cloud Storage
+•	Title: Activity 3: Using Cloud Storage
+•	Steps:
+o	Create an S3 bucket in AWS.
+o	Upload a file.
+o	Download it via CLI.
+•	Visual: AWS S3 dashboard screenshot.
+
+Activity 1: Basic Linux Commands
+Linux Commands:
+sudo apt update             # Update package list
+sudo apt upgrade -y         # Upgrade installed packages
+sudo apt dist-upgrade -y    # Upgrade with dependency changes
+sudo apt autoremove –y
+ls -la                      # List files with details
+cd /path/to/directory       # Change directory
+mkdir new_folder            # Create a new directory
+touch newfile.txt           # Create an empty file
+rm file.txt                 # Remove a file
+rm -rf directory/           # Force remove a directory
+cp source.txt /target/      # Copy file
+mv oldname.txt newname.txt  # Rename or move a file
+echo "Hello, Cloud OS!" > demo-file.txt
+df –h
+lsblk
+
+
+
+4. Activity 2: Install and Run a Web Server
+Update the System:
+
+o	sudo apt update && sudo apt upgrade -y
+
+Install Apache Web Server:
+
+o	sudo apt install apache2 -y
+
+Start the Web Server:
+o	sudo systemctl start apache2
+
+Verify Apache:
+o	Open a browser and navigate to the EC2 public IP. You should see the default Apache page.
+
+Now lets launch sample index.html using following
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CloudOs Workshop</title>
+</head>
+<body style='text-align: center; font-family: Arial, sans-serif; margin-top: 100px;'>
+    <h1>Welcome to CloudOs workshop at Charusat</h1>
+    <h2>Happy Learning</h2>
+</body>
+</html>
+
+
+5. Activity 3: Install Docker
+Install Prerequisites:
+
+o	sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+
+Add Docker’s GPG Key:
+
+o	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+Add Docker Repository:
+
+
+o	echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+Install Docker:
+
+
+o	sudo apt update && sudo apt install docker-ce -y
+
+Verify Docker Installation:
+
+
+o	docker --version
+
+Run a Test Container:
+
+
+sudo docker run -d -p 80:80 nginx
+
+o	Access the EC2 public IP again. You should see the Nginx Welcome Page.
+o	Take care of ports
+
+Docker swarm
+
+Docker-compose.yml
+
+version: '3.8'
+
+services:
+  nginx83:
+    image: nginx:latest
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    networks:
+      - webnet
+
+  nginx84:
+    image: nginx:latest
+    ports:
+      - "84:80"
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+    networks:
+      - webnet
+
+networks:
+  webnet:
+
+Install aws cli on EC2
+sudo apt install -y curl unzip
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+aws –version
+
+Aws configure
+Generate Access key and Secret Key from IAM
+
+
+Activity 5: Create Bucket:
+
+
+•	 aws s3 mb s3://my-bucket-name --region us-east-1
+
+Allow Public Access:
+
+
+Upload Content:
+
+
+•	aws s3 cp index.html s3://my-bucket-name/
+
+Set Bucket Policy:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::nidhi260583/*"
+        }
+    ]
+}
+
+
+
+
+
+
+
